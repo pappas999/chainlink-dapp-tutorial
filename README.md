@@ -27,7 +27,7 @@ You can get one for free from [Alchmey](https://www.alchemy.com/), [Infura](http
 
 This is your private key from your wallet, ie [MetaMask](https://metamask.io/). This is needed for deploying contracts to public networks. You can optionally set your `MNEMONIC` environment variable instead with some changes to the `hardhat.config.js`.
 
-![WARNING](https://via.placeholder.com/15/f03c15/000000?text=+) **WARNING** ![WARNING](https://via.placeholder.com/15/f03c15/000000?text=+)
+**WARNING**
 
 When developing, it's best practice to use a Metamask that isn't associated with any real money. A good way to do this is to make a new browser profile (on Chrome, Brave, Firefox, etc) and install Metamask on that brower, and never send this wallet money.  
 
@@ -74,14 +74,14 @@ npx hardhat run --network rinkeby scripts/deploy.js
 
 ## Deploying And Running the Frontend
 
-First you shuold install the required dependencies:
+First you should install the required dependencies:
 
 ```
 cd frontend
 npm install
 ```
 
-Next step is to take your deployed contract address from the previous section, and put it in the [App.js](./src/App.js) file in the `contractAddress` constant, then save your file.
+Next step is to take your deployed contract address from the previous section, and put it in the [App.js](./frontend/src/App.js) file in the `contractAddress` constant, then save your file.
 
 Finally, to run the frontend:
 ```
